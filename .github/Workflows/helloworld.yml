@@ -1,12 +1,12 @@
 # sample
 name: Hello World workflow
 
-# Control when the action will run. Triggers the Workflow on push done to master or production barnch
+# Control when the action will run. Triggers the Workflow on push done to master or production branch
 on:
     push:
-        branchches:
+        branches:
             - master
-            -  production
+            - production
 
 
 jobs:
@@ -14,6 +14,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: "Print Hello World"
-            run: echo "Hello World"
+              run: echo "Hello World"
             - name: "Print Current Date"
-            run: date
+              run: datete
