@@ -16,11 +16,3 @@ jobs:
               run: echo "Hello World"
             - name: "Print Current Date"
               run: date
-
-jobs2:
-    hello_world:
-        runs-on: ubuntu-latest
-        steps:
-            -name: "hello world"
-            run: echo "hello jobs2"
-
