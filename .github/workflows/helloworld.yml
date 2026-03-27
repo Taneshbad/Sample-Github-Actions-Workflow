@@ -22,5 +22,5 @@ jobs2:
         runs-on: ubuntu-latest
         steps:
         - name: hello world
-            run: echo "hello jobs2"
-            
+        run: echo "hello jobs2"
+
