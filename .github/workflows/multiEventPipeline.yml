@@ -10,7 +10,9 @@ on:
           - master
         types:
             - closed
+newtest3
             - opened
+master
     workflow_dispatch:
     
 jobs:
@@ -27,13 +29,14 @@ jobs:
           - name: "Running on pull request" # step 1
             run: echo "running on pull request"
 
+newtest3
     on-pull-request-opened:
         if: github.event_name == 'pull_reqeust' && github.event.action == 'opened'
         runs-on: ubuntu-latest
         steps:
            - name: "running on pull request opened"
              run: echo "running on pull request opened"
-
+master
     on-pull-request-closed:
         if: github.event_name == 'pull_request' && github.event.action == 'closed'
         runs-on: ubuntu-latest
