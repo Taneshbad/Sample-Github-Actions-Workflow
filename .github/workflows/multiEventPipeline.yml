@@ -10,7 +10,6 @@ on:
           - master
     workflow_dispatch:
 
-
 jobs:
     on-push: # Job name
         if: github.event_name == 'push'
